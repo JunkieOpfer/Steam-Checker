@@ -2,7 +2,7 @@
 
 ---
 <p align = "center">
-  <a href = "">Download - Release</a>
+  <a href = "https://github.com/JunkieOpfer/Steam-Checker/releases/download/Steam/SteamChecker.zip">Download - Release</a>
 </p>
 
 <p align="center">
