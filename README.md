@@ -16,6 +16,8 @@ Introducing the Steam Checker, an easy-to-use tool designed to provide you with 
 - [x] Check **Valid**
 - [x] Check **Protected**
 - [x] Check **Invalid**
+
+#### Soon
 - [ ] Check for specific Age
 - [ ] Check for paid Games
 - [ ] Check for Account-Balance
