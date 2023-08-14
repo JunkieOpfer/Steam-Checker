@@ -50,12 +50,19 @@
             this.copyToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
             this.open_website_at_start = new System.Windows.Forms.CheckBox();
+            this.show_proxy_manager = new System.Windows.Forms.CheckBox();
+            this.contextMenuStrip4 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.showToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.proxyManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.groupBox1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.contextMenuStrip2.SuspendLayout();
             this.contextMenuStrip3.SuspendLayout();
+            this.contextMenuStrip4.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -241,12 +248,64 @@
             this.open_website_at_start.TabIndex = 12;
             this.open_website_at_start.Text = "Open Credits at Start";
             this.open_website_at_start.UseVisualStyleBackColor = true;
+            this.open_website_at_start.CheckedChanged += new System.EventHandler(this.open_website_at_start_CheckedChanged);
+            // 
+            // show_proxy_manager
+            // 
+            this.show_proxy_manager.AutoSize = true;
+            this.show_proxy_manager.Checked = true;
+            this.show_proxy_manager.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.show_proxy_manager.Location = new System.Drawing.Point(336, 449);
+            this.show_proxy_manager.Name = "show_proxy_manager";
+            this.show_proxy_manager.Size = new System.Drawing.Size(127, 17);
+            this.show_proxy_manager.TabIndex = 13;
+            this.show_proxy_manager.Text = "Show Proxy Manager";
+            this.show_proxy_manager.UseVisualStyleBackColor = true;
+            this.show_proxy_manager.CheckedChanged += new System.EventHandler(this.show_proxy_manager_CheckedChanged);
+            // 
+            // contextMenuStrip4
+            // 
+            this.contextMenuStrip4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showToolStripMenuItem,
+            this.proxyManagerToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.contextMenuStrip4.Name = "contextMenuStrip4";
+            this.contextMenuStrip4.Size = new System.Drawing.Size(181, 92);
+            // 
+            // showToolStripMenuItem
+            // 
+            this.showToolStripMenuItem.Name = "showToolStripMenuItem";
+            this.showToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.showToolStripMenuItem.Text = "Show";
+            this.showToolStripMenuItem.Click += new System.EventHandler(this.showToolStripMenuItem_Click);
+            // 
+            // proxyManagerToolStripMenuItem
+            // 
+            this.proxyManagerToolStripMenuItem.Name = "proxyManagerToolStripMenuItem";
+            this.proxyManagerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.proxyManagerToolStripMenuItem.Text = "Proxy Manager";
+            this.proxyManagerToolStripMenuItem.Click += new System.EventHandler(this.proxyManagerToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.ContextMenuStrip = this.contextMenuStrip4;
+            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
+            this.notifyIcon1.Text = "Settings";
+            this.notifyIcon1.Visible = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(903, 474);
+            this.Controls.Add(this.show_proxy_manager);
             this.Controls.Add(this.open_website_at_start);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnAddAccounts);
@@ -259,15 +318,17 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Steam Checker";
+            this.Text = "Steam Checker (Proxy Version)";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Move += new System.EventHandler(this.Form1_Move);
             this.groupBox1.ResumeLayout(false);
             this.contextMenuStrip1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.contextMenuStrip2.ResumeLayout(false);
             this.contextMenuStrip3.ResumeLayout(false);
+            this.contextMenuStrip4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -295,6 +356,12 @@
         private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.CheckBox open_website_at_start;
+        private System.Windows.Forms.CheckBox show_proxy_manager;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip4;
+        private System.Windows.Forms.ToolStripMenuItem showToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem proxyManagerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
     }
 }
 

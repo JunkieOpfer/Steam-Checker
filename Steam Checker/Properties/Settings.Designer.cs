@@ -34,5 +34,17 @@ namespace Steam_Checker.Properties {
                 this["OpenCredits"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool OpenProxyManager {
+            get {
+                return ((bool)(this["OpenProxyManager"]));
+            }
+            set {
+                this["OpenProxyManager"] = value;
+            }
+        }
     }
 }

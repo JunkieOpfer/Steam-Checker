@@ -37,9 +37,23 @@ namespace Steam_Checker
         #region load
         private void Form1_Load(object sender, EventArgs e)
         {
+            show_proxy_manager.Checked = Properties.Settings.Default.OpenProxyManager;
             open_website_at_start.Checked = Properties.Settings.Default.OpenCredits;
+           
 
-            if(open_website_at_start.Checked == true)
+
+            if (show_proxy_manager.Checked == true)
+            {
+                ProxyForm proxyForm = new ProxyForm();
+                proxyForm.Show();
+            }
+            else
+            {
+                ProxyForm proxyForm = new ProxyForm();
+                proxyForm.Hide();
+            }
+
+            if (open_website_at_start.Checked == true)
             {
                 Process.Start("https://github.com/JunkieOpfer");
             }
@@ -47,6 +61,8 @@ namespace Steam_Checker
             {
 
             }
+
+            
         }
         #endregion
         private async void btnLoadAccounts_Click(object sender, EventArgs e)
@@ -324,6 +340,7 @@ namespace Steam_Checker
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
+            Properties.Settings.Default.OpenProxyManager = show_proxy_manager.Checked;
             Properties.Settings.Default.OpenCredits = open_website_at_start.Checked;
             Properties.Settings.Default.Save();
         }
@@ -339,6 +356,40 @@ namespace Steam_Checker
             string path = System.IO.Path.Combine(exeFolderPath, "Output");
 
             Process.Start("explorer.exe", path);
+        }
+
+        private void open_website_at_start_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void show_proxy_manager_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Form1_Move(object sender, EventArgs e)
+        {
+            if(this.WindowState == FormWindowState.Minimized)
+            {
+                this.Hide();
+            }
+        }
+
+        private void showToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Show();
+        }
+
+        private void proxyManagerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProxyForm proxyForm = new ProxyForm();
+            proxyForm.Show();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }
