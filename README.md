@@ -13,12 +13,12 @@ Introducing the Steam Checker, an easy-to-use tool designed to provide you with 
 
 #### Main features
 
+- [x] **Proxy** System (!)
 - [x] Check **Valid**
 - [x] Check **Protected**
 - [x] Check **Invalid**
 
 #### Soon
-- [ ] Proxy System (!)
 
 - [ ] Check for specific Age
 - [ ] Check for paid Games
