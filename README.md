@@ -18,7 +18,7 @@ Introducing the Steam Checker, an easy-to-use tool designed to provide you with 
 - [x] Check **Invalid**
 
 #### Soon
-- [ ] Proxyless (!)
+- [ ] Proxy System (!)
 
 - [ ] Check for specific Age
 - [ ] Check for paid Games
