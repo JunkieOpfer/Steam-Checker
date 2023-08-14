@@ -28,10 +28,11 @@ Introducing the Steam Checker, an easy-to-use tool designed to provide you with 
 
 #### How to use?
 - Open the Proxy Manager form
-- Enter your proxies in the input textbox in the format (ip:port)
+- Enter your [proxies](https://github.com/TheSpeedX/PROXY-List) in the input textbox in the format (ip:port)
 - Select your proxy type from one of the radio buttons at the bottom
 - Click on "Format Proxies" button
 - Your proxies will be converted into the correct format (type://ip:port) and displayed in the output textbox
+- Than click on the "Add/Edit Proxies" button
 - Click on the "Check Accounts" button
 - Open the "Accounts.txt" file and add your Steam accounts
 - Press CTRL + S to save the file and close it
