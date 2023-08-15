@@ -20,6 +20,7 @@ Introducing the Steam Checker, an easy-to-use tool designed to provide you with 
 
 #### Soon
 
+- [ ] MultiThreading
 - [ ] Check for **specific Age**
 - [ ] Check for **paid Games**
 - [ ] Check for **Account-Balance**
