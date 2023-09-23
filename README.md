@@ -41,7 +41,7 @@ Introducing the Steam Checker, an easy-to-use tool designed to provide you with 
 
 ---
 
-#### <a href="https://github.com/JunkieOpfer/Steam-Checker/releases/download/SteamChecker/SteamChecker.Proxy.Version.zip">ðŸ”µ Preview (Proxy Version):</a>
+#### <a href="https://github.com/JunkieOpfer/Steam-Checker/releases/download/SteamChecker/SteamChecker.Proxy.Version.zip">Preview (Proxy Version):</a>
 <details>
   <summary>Main Page</summary>
   
@@ -58,7 +58,7 @@ Introducing the Steam Checker, an easy-to-use tool designed to provide you with 
   ![Image](https://i.postimg.cc/Bv2HmwL7/image.png)
 </details>
 
-#### <a href="https://github.com/JunkieOpfer/Steam-Checker/releases/download/Steam/SteamChecker.zip">ðŸ”µ Preview (No Proxy Version):</a>
+#### <a href="https://github.com/JunkieOpfer/Steam-Checker/releases/download/Steam/SteamChecker.zip">Preview (No Proxy Version):</a>
 
 <details>
   <summary>Main Page</summary>
